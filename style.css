@@ -1,0 +1,185 @@
+.tabs{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items:center;
+    justify-content: space-between;
+    width:1200px;
+    margin:auto;
+}
+.tabs label {
+	order: 1; 
+	display: block;
+    padding: 1rem 2rem;
+    margin-top:2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+    background:transparent;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.tabs label:hover{
+
+    color:#a71c20;
+
+}
+.tabs input[type="radio"]:checked + label + .tab +.footbar{
+	display: block;
+}
+
+.tabs .tab, .tabs .footbar {
+    order: 99; 
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #fff;
+}
+
+@media (max-width: 45em) {
+    .tabs .tab,
+    .tabs label {
+      order: initial;
+    }
+    .tabs label {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0.2rem;
+    }
+  }
+
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #fff;
+}
+.tabs input[type="radio"]:checked + label +.tab {
+	display: block;
+}
+
+.logo{
+
+    display:flex;
+    height:130px;
+    width:150px;
+    margin-right:300px;
+}
+
+
+.footbar{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.footer{
+    width:25px;
+    height:25px;
+    padding: 3px;
+    filter : blur(0);
+}
+.foottext{
+    vertical-align: middle;
+    display:inline-block;
+}
+.about{
+    
+    width:400px;
+    display:block;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin:auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    color:#a71c20;
+    font-weight:bolder;
+    font-size:26px;
+
+}
+
+.info{
+    background-color:#f5f5dc ;
+    width:50%;
+    height:400px;
+    vertical-align:top;
+}
+
+h1{
+    text-align:center;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#a71c20;
+    font-weight:bolder;
+    font-size:26px;
+    margin-top:40px;
+
+}
+.wording{
+    text-align:justify;
+    margin-left:15%;
+    margin-right:15%;
+    line-height: 1.1;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:18px;
+
+}
+.centering{
+    display:block;
+    margin:auto;
+}
+.center{
+    text-align:center;
+}
+
+.mySlides {
+    display:none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;   
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  
+/* Position the "next button" to the right */
+.next {
+    margin-left:1111px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.slideshow-container{
+    position:relative;
+    max-width:1168px;
+    width:auto;
+  
+}
